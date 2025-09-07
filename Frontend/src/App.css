@@ -1,0 +1,11 @@
+:root {
+  /* Primary */
+  --color-black: #000000;
+  --color-dark-gray-1: #222222;
+  --color-dark-gray-2: #242424;
+  --color-dark-gray-3: #1F1F1F;
+  --color-gray: #454646;
+
+  /* Accent */
+  --color-green: #51C87C;
+}
