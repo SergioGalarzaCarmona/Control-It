@@ -1,11 +1,11 @@
-import React from 'react'
+import {TaskAdminPanel} from './components/TaskAdminPanel'
 
 function App() {
   return (
     <div>
-      <h1>HELLO WORLD</h1>
+      <TaskAdminPanel />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
