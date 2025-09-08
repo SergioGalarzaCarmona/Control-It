@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export function TaskAdminPanel() {
   const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState({ title: "", description: "" });
+  const [newTask, setNewTask] = useState({ title: "", completed: false });
   const [editingTask, setEditingTask] = useState(null);
 
   // Fetch tasks from backend (Django DRF)
@@ -113,11 +113,11 @@ export function TaskAdminPanel() {
                   <td>
                     <input
                       type="checkbox"
-                      value={editingTask.completed}
+                      checked={editingTask.completed}
                       onChange={(e) =>
                         setEditingTask({
                           ...editingTask,
-                          description: e.target.value,
+                          completed : e.target.checked,
                         })
                       }
                     />
